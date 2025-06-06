@@ -1,0 +1,1 @@
+# In-Silico-study-to-identify-potential-AKT2-inhibitors-comparable-to-FDA-drug-Capivasertib
