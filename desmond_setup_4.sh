@@ -1,0 +1,1 @@
+"${SCHRODINGER}/utilities/multisim" -JOBNAME desmond_setup_4 -m desmond_setup_4.msj desmond_setup_4.mae -o desmond_setup_4-out.cms -HOST localhost -TMPLAUNCHDIR

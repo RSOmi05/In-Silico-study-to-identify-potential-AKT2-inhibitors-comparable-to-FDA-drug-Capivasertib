@@ -1,0 +1,113 @@
+Job launching command:
+$SCHRODINGER/utilities/multisim -JOBNAME desmond_setup_4 -m desmond_setup_4.msj desmond_setup_4.mae -o desmond_setup_4-out.cms -HOST localhost -PROJ /tmp/biosol/Tmp_19Sep2024_0903_55162 -DISP append -VIEWNAME system_builder_gui.SystemBuilderPanel -TMPLAUNCHDIR
+
+Booting the multisim workflow engine...
+           multisim version: 3.8.5.19
+            mmshare version: 5.1
+                    Jobname: desmond_setup_4
+                   Username: biosol
+            Master job host: undetected
+                Subjob host: localhost
+                     Job ID: biosol-Z490-VISION-G-0-66eb95f4
+            multisim script: desmond_setup_4.msj
+       Structure input file: desmond_setup_4.mae
+            CPUs per subjob: (unspecified in command)
+             Job start time: Thu Sep 19 09:09:41 2024
+           Launch directory: /home/biosol/Documents/2. Enamul Kabir/Sharon Project/6. project OMI/2JDO-CHEMBL36796292/desmond_setup_4
+               $SCHRODINGER: /opt/schrodinger2020-3
+
+Parsing the multisim script file...
+
+Summary of user stages:
+  stage 1 - task
+  stage 2 - build_geometry
+  stage 3 - assign_forcefield
+(3 stages in total)
+
+Workflow is started now.
+
+Stage 1 - task
+stage[1] task: Detecting system type...
+stage[1] task:   It seems a raw geometry for regular molecular dynamics simulations
+stage[1] task: Recognizing traits of system...
+stage[1] task:   (none)
+
+Stage 1 completed successfully.
+Stage 1 duration: 0h 0' 0"
+
+
+Stage 2 - build_geometry
+[running at reduced cpu priority]
+
+Launched Job("biosol-Z490-VISION-G-0-66eb95f6"):
+  Launch time: 2024-09-19-09:09:42
+  Host       : localhost
+  Jobname    : desmond_setup_4_2
+  Stage      : 2 (build_geometry)
+
+Job("biosol-Z490-VISION-G-0-66eb95f6") was successfully finished.
+  Host       : localhost
+  Launch time: Thu Sep 19 09:09:42 2024
+  Start time : Thu Sep 19 09:09:43 2024
+  End time   : Thu Sep 19 09:09:51 2024
+  Duration   : 0h 0' 8"
+  CPUs       : 1
+  CPU time   : 0h 0' 8"
+  Exit code  : 0
+  Jobname    : desmond_setup_4_2
+  Stage      : 2 (build_geometry)
+
+Stage 2 completed successfully.
+Stage 2 duration: 0h 0' 11"
+
+
+Stage 3 - assign_forcefield
+Running force_field_builder version 51139
+
+OPLS Version: OPLS3e
+FEP mode: 2
+FEP retain angle: 2
+Skip creating the fepio_fep block
+Reading input structures.
+Creating New ffio_ff block...
+Creating molsym
+Creating New ffio_ff block...
+Creating molsym
+Creating New ffio_ff block...
+Creating molsym
+Creating New ffio_ff block...
+Creating molsym
+Creating New ffio_ff block...
+Creating molsym
+
+force_field_builder: job successfully run
+
+viparr 1.5.1
+All FF directories, in order:
+ /opt/schrodinger2020-3/internal/lib/python3.6/site-packages/schrodinger/application/desmond/packages/viparr1/viparr-ff/ff/spc
+Plug-in directory: /opt/schrodinger2020-3/internal/lib/python3.6/site-packages/schrodinger/application/desmond/packages/viparr1/plugins
+Reading maestro file <desmond_setup_4_3-out.cms_> ...
+Done reading maestro file
+Analyzing ct block 6
+Warning: Missing backward edges...adding them now
+******Constructing residue list for </opt/schrodinger2020-3/internal/lib/python3.6/site-packages/schrodinger/application/desmond/packages/viparr1/viparr-ff/ff/spc> Structure 6
+******Main loop: Structure 6
+Pre-processing force field </opt/schrodinger2020-3/internal/lib/python3.6/site-packages/schrodinger/application/desmond/packages/viparr1/viparr-ff/ff/spc> for rules and pseudos
+Processing force field </opt/schrodinger2020-3/internal/lib/python3.6/site-packages/schrodinger/application/desmond/packages/viparr1/viparr-ff/ff/spc>
+Compressing FF representation...
+Building mae data structure...
+Number of pseudo particles: 0
+Writing maestro file <desmond_setup_4_3-out.cms_vp>
+4 ARITHMETIC/GEOMETRIC
+
+Stage 3 completed successfully.
+Stage 3 duration: 0h 0' 12"
+
+Cleaning up files...
+
+Multisim summary (Thu Sep 19 09:10:04 2024):
+  Stage 1 completed.
+  Stage 2 completed.
+  Stage 3 completed.
+  Total duration: 0h 0' 23"
+Multisim completed.
